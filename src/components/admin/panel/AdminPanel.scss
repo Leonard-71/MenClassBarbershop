@@ -1,0 +1,32 @@
+.admin-panel {
+  display: flex;
+
+  .admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2E3846;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+
+  .admin-option {
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: center;
+
+    &.selected {
+      text-decoration: underline;
+    }
+  }
+
+  .admin-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #1A2532;
+    color: white;
+  }
+}

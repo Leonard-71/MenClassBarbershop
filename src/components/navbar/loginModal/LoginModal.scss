@@ -1,0 +1,247 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0f1216ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+
+
+.modal-logare {
+  position: relative;
+  width: 695px;
+  height: 428px;
+  margin: 0 auto; 
+  border-radius: 5px;
+  border: 5px solid #ADA76C;
+ 
+
+  .background {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #1A2532;
+    
+
+
+    .rectangle-37 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: #ADA76C;
+      clip-path: polygon(100% 0, 100% 100%, 68.63% 0);
+    }
+
+    .title {
+      position: absolute;
+      left: 76.98%;
+      right: 2.16%;
+      top: 4.21%;
+      bottom: 89.72%;
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.2em;
+      color: #1A2532;
+    }
+
+    .sectiunea-conectare {
+      position: absolute;
+      left: 8.92%;
+      right: 27.77%;
+      top: 30.89%;
+      bottom: 22.66%;
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        position: relative;
+      
+        label {
+          margin-left: 2rem;
+          color: #fff;
+          font-size: 14px;
+          font-family: 'Roboto';
+          font-style: normal;
+          flex-shrink: 0;
+        }
+      
+        input {
+          width: 60%;
+          padding: 0.75rem;
+          border: 1px solid #ADA76C;
+          border-radius: 4px;
+          background-color: #ADA76C;
+          color: #1A2532;
+          font-size: 1rem;
+
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px #ADA76C inset !important;
+            -webkit-text-fill-color: #1A2532 !important;
+          }
+        }
+      
+        .toggle-password {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #1A2532;
+
+          svg {
+            font-size: 1rem;
+          }
+        }
+      }
+      
+    }
+    .error-message {
+      position: absolute;
+      color: red;
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 1rem;
+      margin-left: 30%;
+      top:57%;
+    }
+    .buton-conectare {
+      position: absolute;
+      left: 37.55%;
+      right: 39.71%;
+      top: 74.56%;
+      bottom: 22.66%;
+
+      .login-button {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #ADA76C;
+        border: none;
+        border-radius: 4px;
+        color: #1c2a39;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+    }
+   
+    .sectiunea-creare-cont {
+      position: absolute;
+      margin-left: 35%;
+      top:70%;
+
+      .reset-password,
+      .create-account {
+        display: block;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+
+    .background {
+      .sectiunea-conectare {
+        left: 5%;
+        right: 5%;
+        top: 30%;
+        bottom: auto;
+      }
+
+      .buton-conectare {
+        left: 20%;
+        right: 20%;
+        top: 60%;
+        bottom: auto;
+
+        .login-button {
+          font-size: 0.875rem;
+        }
+      }
+
+      .sectiunea-creare-cont {
+        left: 15%;
+        right: 15%;
+        top: 75%;
+        bottom: auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .background {
+      .title {
+        font-size: 16px;
+      }
+
+      .sectiunea-conectare {
+        left: 5%;
+        right: 5%;
+        top: 25%;
+        bottom: auto;
+
+        .input-group {
+          flex-direction: column;
+
+          label {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+          }
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+
+      .buton-conectare {
+        left: 10%;
+        right: 10%;
+        top: 50%;
+        bottom: auto;
+      }
+
+      .sectiunea-creare-cont {
+        left: 10%;
+        right: 10%;
+        top: 65%;
+        bottom: auto;
+      }
+    }
+  }
+}
+}

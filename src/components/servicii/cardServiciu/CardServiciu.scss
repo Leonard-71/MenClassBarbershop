@@ -1,0 +1,68 @@
+.card-servicu {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    color: #ADA76C;
+
+    .nume-serviciu,
+    .durata-serviciu,
+    .pret-serviciu {
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+    .nume-serviciu {
+        text-align: right;
+        margin-right: 3%;
+    
+        h2 {
+            font-style: normal;
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+    
+        p {
+            font-style: normal;
+            font-size: 16px;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+            margin-top: 0;
+        }
+    }
+    
+
+    .durata-serviciu {
+        text-align: center;
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0.2em;
+            margin-bottom: 5px;
+        }
+
+        .linie-punctata {
+            border-bottom: 6px dotted #ADA76C;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 3px;
+        }
+    }
+
+    .pret-serviciu {
+        margin-left: 3%;
+        margin-top: 0.2%;
+        text-align: left;
+
+        p {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .durata-serviciu {
+        width: 50%;
+    }
+}

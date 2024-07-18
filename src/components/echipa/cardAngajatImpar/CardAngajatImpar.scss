@@ -1,0 +1,111 @@
+.card-angajat-impar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 90%;
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .coloana-stanga {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin-top: 2%;
+
+            .nume-prenume-angajat {
+                background: #2E3846;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+
+                p {
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+
+            .descriere-angajat {
+                width: 90%;
+                margin-left: 2.5%;
+                background: #ADA76C;
+                padding: 20px;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #1A2532;
+                }
+            }
+
+            .contact-angajat {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+                background: #ADA76C;
+                width: 90%;
+                margin-left: 2.5%;
+                margin-top: 6%;
+
+                .icon-angajat-impar {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 5px;
+                    }
+
+                    p {
+                        color: #1A2532;
+                        font-size: 18px;
+                        margin: 0;
+                    }
+                }
+
+                .icon-angajat-impar:first-child {
+                    margin-right: auto;
+                }
+
+                .icon-angajat-impar:not(:first-child) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+
+
+    .coloana-dreapta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+
+        .img-angajat {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

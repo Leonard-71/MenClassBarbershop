@@ -1,0 +1,28 @@
+$culoare-principala: #ADA76C;
+
+.container-intro-pagini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3%;
+
+  .imagine-intro-pagini {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+
+  .bara-orizontala-intro-pagini {
+    width: 25%;
+    border: 1px solid $culoare-principala;
+  }
+
+  .text-intro-pagini {
+    margin-top: 3px;
+    color: $culoare-principala;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+}
