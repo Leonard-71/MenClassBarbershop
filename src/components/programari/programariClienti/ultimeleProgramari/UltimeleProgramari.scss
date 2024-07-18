@@ -1,0 +1,69 @@
+.container-ultimele-programari {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3%;
+
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    color: #ADA76C;
+    width: 100%;
+  }
+
+  .programari-container {
+    color: #ADA76C;
+    border: 1px solid #ADA76C;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    font-family: 'Arial', sans-serif;
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+
+      .column {
+        flex: 1;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .content-body {
+      max-height: 400px; 
+      overflow-y: auto;
+
+      .content-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .column {
+          flex: 1;
+          text-align: center;
+          font-size: 18px;
+          font-weight: normal;
+        }
+
+        .serviciu-title {
+          font-weight: bold;
+          margin-bottom: 3px;
+        }
+
+        .serviciu-description {
+          text-align: center;
+          font-size: 14px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

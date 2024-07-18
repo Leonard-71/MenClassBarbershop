@@ -1,0 +1,223 @@
+.zile-libere {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tabel-zile-libere {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #4B5665;
+            color: #000;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #D9D9D9;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #7C8CA5;
+        }
+
+        td {
+            color: #000;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        .edit-button-zile-libere,
+        .delete-button-zile-libere {
+            background: none;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 5px;
+
+            &:hover {
+                color: #d81919;
+            }
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .add-button-zile-libere {
+        background-color: #7c8ca5;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 0 5px 5px 0;
+
+        svg {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            background-color: #5a6a85;
+        }
+    }
+
+    .form-zile-libere {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        .form-group-zile-libere {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                margin-bottom: 5px;
+                color: #000;
+                text-align: center;
+            }
+
+            input[type="text"] {
+                width: 450px;
+                padding: 5px;
+                font-size: 18px;
+                text-align: center;
+                background-color: #7C8CA5;
+                color: #000000;
+
+                &::placeholder{
+                    color: #000;
+                }
+            }
+
+            .date-picker-zile-libere {
+                padding: 10px;
+                font-size: 16px;
+                background-color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                width: 100%;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .react-datepicker__input-container {
+                width: 500px;
+            }
+
+            .react-datepicker-wrapper {
+                width: 100%;
+            }
+
+            .react-datepicker__input-container {
+                width: 100%;
+            }
+
+            .react-datepicker {
+                background-color: #1a2532;
+                border: 2px solid #1a2532;
+            }
+
+            .react-datepicker__header {
+                background-color: #1a2532;
+                border-bottom: 2px solid #d6d6d6;
+            }
+
+            .react-datepicker__current-month,
+            .react-datepicker-time__header,
+            .react-datepicker-year-header {
+                color: #ffffff;
+                font-size: 1.7em;
+                text-align: center;
+            }
+
+            .react-datepicker__day-name,
+            .react-datepicker__day,
+            .react-datepicker__time-name {
+                color: rgb(255, 255, 255);
+                font-size: 1.4em;
+                text-align: center;
+            }
+
+            .react-datepicker__day--selected,
+            .react-datepicker__day--keyboard-selected,
+            .react-datepicker__day--range-start,
+            .react-datepicker__day--in-selecting-range,
+            .react-datepicker__day--in-range,
+            .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+                background-color: #7C8CA5; 
+                color: #ffffff;
+            }
+
+            .react-datepicker__day:hover, 
+            .react-datepicker__day--selected:hover, 
+            .react-datepicker__day--keyboard-selected:hover, 
+            .react-datepicker__day--range-start:hover, 
+            .react-datepicker__day--in-selecting-range:hover, 
+            .react-datepicker__day--in-range:hover, 
+            .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover, 
+            .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+                background-color: #7C8CA5; 
+                color: #ffffff;
+            }
+
+            .react-datepicker__day--disabled {
+                color: #ffffff;
+            }
+
+            .react-datepicker__day-name--selected,
+            .react-datepicker__day-name--keyboard-selected,
+            .react-datepicker__day-name--range-start,
+            .react-datepicker__day-name--in-selecting-range,
+            .react-datepicker__day-name--in-range,
+            .react-datepicker__day-name:hover, 
+            .react-datepicker__day-name--selected:hover, 
+            .react-datepicker__day-name--keyboard-selected:hover, 
+            .react-datepicker__day-name--range-start:hover, 
+            .react-datepicker__day-name--in-selecting-range:hover, 
+            .react-datepicker__day-name--in-range:hover {
+                background-color: #7C8CA5;
+                color: #ffffff;
+            }
+
+            .react-datepicker__triangle {
+                display: none;
+            }
+
+            .error-message-zile-libere {
+                color: #f33838;
+                font-size: 15px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

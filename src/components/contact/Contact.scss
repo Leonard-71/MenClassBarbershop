@@ -1,0 +1,16 @@
+.container-contact-page {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #ADA76C;
+  
+    @media (max-width: 768px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    @media (max-width: 480px) {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }

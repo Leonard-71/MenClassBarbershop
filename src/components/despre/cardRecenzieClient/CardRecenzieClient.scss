@@ -1,0 +1,60 @@
+.container-recenzie-client {
+    display: grid;
+    grid-template-columns: 47% 48%;
+    width: 95%;
+
+    .coloana-stanga-recenzie-despre {
+        margin: 2%;
+        margin-left: 6%;
+        margin-right: auto;
+
+        .linie-client-recenzie-despre {
+            display: flex;
+            align-items: center;
+
+            .imagine-client-despre {
+                margin-right: 10px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+
+            .nume-client-despre {
+                font-weight: bold;
+                font-size: 24px;
+                color: #FFFFFF;
+
+              
+
+            }
+            .timestamp-recenzie-despre{  
+                padding-top: 5px;
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+        }
+
+        .linie-descriere-recenzie-despre {
+            font-size: 20px;
+            padding: 10px;
+            overflow-wrap: break-word;
+            color: #FFFFFF;
+        }
+    }
+
+    .coloana-dreapta-recenzie-despre {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-left: auto;
+
+        .stele-review-despre {
+            font-size: 38px;
+            color: #ADA76C;
+        }
+    }
+
+}

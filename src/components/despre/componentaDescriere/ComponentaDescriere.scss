@@ -1,0 +1,151 @@
+$culoare-paralelogram: #2E3846;
+$culoare-triunghi: #ADA76C;
+$culoare-baza: #fff;
+$font: 'Roboto';
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .card-imagine-content {
+    width: 29%;
+    height: 100%;
+    margin-right: -22%;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;  
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 180px;  
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 150px;  
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .card-paralelogram {
+    width: 60%;
+    height: 462px;
+    transform: skew(20deg);
+    background: $culoare-paralelogram;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: -45px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      padding: 10px;
+      transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      padding: 10px;
+      transform: none;
+    }
+
+    .card-continut {
+      transform: skew(-20deg);
+      font-family: $font;
+      color: $culoare-baza;
+      position: absolute;
+      top: 5%;
+      left: 37%;
+      bottom: 8%;
+      overflow-y: hidden;
+      scrollbar-width: none;
+
+      @media (max-width: 768px) {
+        position: static;
+        transform: none;
+        width: 100%;
+        left: 0;
+      }
+
+      @media (max-width: 480px) {
+        position: static;
+        transform: none;
+        width: 100%;
+        left: 0;
+      }
+
+      h4 {
+        font-size: 24px;
+        margin-bottom: 5%;
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+
+      .continut-paragraf {
+        overflow-y: auto;
+        scrollbar-width: none;
+        max-height: 75%;
+
+        @media (max-width: 768px) {
+          max-height: 50%;
+        }
+
+        @media (max-width: 480px) {
+          max-height: 40%;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: -0.8rem;
+
+          @media (max-width: 768px) {
+            font-size: 1rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .card-triunghi {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-top: 477px solid $culoare-triunghi;
+    margin-left: -6.2%;
+    z-index: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}

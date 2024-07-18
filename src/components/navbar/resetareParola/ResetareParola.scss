@@ -1,0 +1,155 @@
+.reset-password-modal {
+    position: relative;
+    width: 750px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 5px solid #ADA76C;
+    background: #1A2532;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+
+    .rectangle-37 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: #ADA76C;
+      clip-path: polygon(100% 0, 100% 100%, 68.63% 0);
+    }
+
+    .title {
+      position: absolute;
+      left: 80%;
+      top: 2%;
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 23px;
+      letter-spacing: 0.2em;
+      color: #1A2532;
+    }
+
+    .sectiunea-resetare {
+      position: relative;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input-group {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        label {
+          margin-bottom: 0.5rem;
+          color: #fff;
+          font-size: 19px;
+          font-family: 'Roboto';
+          font-style: normal;
+          justify-content: center;
+        }
+
+        input {
+          width: 70%;
+          padding: 0.75rem;
+          border: 1px solid #ADA76C;
+          border-radius: 4px;
+          background-color: #ADA76C;
+          color: #1A2532;
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 70px;
+            top: 70%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #1A2532;
+
+            svg {
+                font-size: 1rem;
+            }
+        }
+
+        .message {
+          color: red;
+          text-align: center;
+          margin-top: 0.5rem;
+          font-size: 14px;
+        }
+      }
+
+      .buton-resetare {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .reset-button {
+          text-align: center;
+          width: 200px;
+          padding: 0.75rem;
+          background-color: #ADA76C;
+          border: none;
+          border-radius: 4px;
+          color: #1c2a39;
+          font-weight: bold;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #c4b87c;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: auto;
+      padding: 1rem;
+
+      .title {
+        font-size: 16px;
+        left: 60%;
+      }
+
+      .sectiunea-resetare {
+        margin-top: 3rem;
+      }
+
+      .buton-resetare {
+        .reset-button {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 14px;
+        left: 50%;
+      }
+
+      .sectiunea-resetare {
+        margin-top: 2rem;
+      }
+
+      .buton-resetare {
+        .reset-button {
+          font-size: 0.75rem;
+        }
+      }
+    }
+}

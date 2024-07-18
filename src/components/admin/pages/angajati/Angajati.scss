@@ -1,0 +1,227 @@
+.employee-management {
+  background-color: #1c2331;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+
+  .add-button-angajati-admin {
+    background-color: #556270;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: #39424e;
+    }
+  }
+
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    th, td {
+      border: 1px solid #556270;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #3a4551;
+      color: #000;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    tr:nth-child(odd) td {
+      background-color: #D9D9D9;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #7C8CA5;
+    }
+
+    td {
+      color: #000;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    .edit-button-angajati-admin, .delete-button-angajati-admin {
+      background: none;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 5px;
+
+      &:hover {
+        color: #d81919;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .form-angajati-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    .image-upload-angajati-admin {
+      margin-top: 1.5%;
+      width: 300px;
+      height: 400px;
+      background-color: #d9d9d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      position: relative;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      .icon-angajati-admin {
+        font-size: 50px;
+        color: #1c2331;
+      }
+
+      .image-upload-text-angajati-admin {
+        position: absolute;
+        bottom: -20px;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      .image-preview-angajati-admin {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .form-fields-angajati-admin {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      margin-left: 20px;
+
+      .form-group-angajati-admin {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        label {
+          color: #fff;
+          margin-bottom: 5px;
+        }
+
+        input, textarea {
+          padding: 10px;
+          font-size: 16px;
+          background-color: #d9d9d9;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+        }
+
+        textarea {
+          resize: none;
+          height: 60px;
+        }
+
+        .error-message {
+          color: #d81919;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .description-field-angajati-admin {
+      margin-left: 5%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: #fff;
+        margin-bottom: 5px;
+      }
+
+      textarea  {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        resize: none;
+        height: 280px;
+      }
+
+      .form-buttons-angajati-admin{
+        margin-top: 13.5%;
+        display: flex;
+        justify-content: flex-start;  
+        gap:182px;
+
+        .save-button-angajati-admin, .cancel-button-angajati-admin {
+          align-self: row;
+          background-color: #556270;
+          border: none;
+          color: #fff;
+          padding: 9px 20px;
+          cursor: pointer;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-top: 20px;
+          transition: background-color 0.3s ease;
+    
+          svg {
+            margin-right: 10px;
+          }
+    
+          &:hover {
+            background-color: #39424e;
+          }
+        }
+      }
+
+    }
+
+    
+
+
+  }
+}

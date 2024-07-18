@@ -1,0 +1,33 @@
+.programari {
+    margin-top: -4%;
+    height: auto;
+    width: 100%;
+    background-color: #252525;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    .coloana-stanga-programari,
+    .coloana-dreapta-programari {
+        margin-top: 4%;
+        margin-bottom: 10%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .coloana-stanga-programari {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coloana-dreapta-programari {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}

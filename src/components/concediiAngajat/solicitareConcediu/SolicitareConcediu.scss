@@ -1,0 +1,169 @@
+.container-concedii {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1A2532;
+  color: #ADA76C;
+  padding: 20px;
+
+  .titlu-concedii {
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+    width: 100%;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ADA76C;
+    }
+
+    input[type="date"], .custom-date-picker {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ada76c;
+      color: #ada76c;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+      text-align: left;
+
+      &:focus {
+        border-color: #ada76c;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #ada76c;
+      }
+    }
+
+    .custom-date-picker {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ADA76C;
+      border-radius: 4px;
+      background-color: #1A2532;
+      color: #ADA76C;
+      margin-bottom: 16px;
+    }
+
+    select,
+    input,
+    textarea {
+      width: 83%;
+      padding: 8px;
+      border: 1px solid #ADA76C;
+      border-radius: 4px;
+      background-color: #1A2532;
+      color: #ADA76C;
+      margin-bottom: 16px;
+    }
+
+    textarea {
+      width: 80%;
+      resize: vertical;
+    }
+  }
+
+  .butoane {
+    display: flex;
+    justify-content: end;
+    width: 98%;
+    margin-top: 16px;
+
+    .buton-trimite {
+      width: 48%;
+      padding: 12px;
+      border: 1px solid #ADA76C;
+      border-radius: 4px;
+      background-color: #ADA76C;
+      color: #1A2532;
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.9rem;
+
+      &:hover {
+        background-color: darken(#ADA76C, 10%);
+      }
+    }
+  }
+
+
+  .notification {
+    position: absolute;
+    top: 80%;
+    left: 50px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    &.success {
+      color: white;
+    }
+    &.error {
+      color: rgb(231, 0, 0);
+    }
+  }
+
+  .error-message {
+    color: #F44336;
+    margin-top: 10px;
+  }
+
+}
+
+.react-datepicker-wrapper {
+  width: 80%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ADA76C;
+  border-radius: 4px;
+  background-color: #1A2532;
+  color: #ADA76C;
+  margin-bottom: 16px;
+}
+
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  background-color: #1A2532;
+  border: 1px solid #ADA76C;
+  color: #ADA76C;
+
+}
+
+.react-datepicker__header {
+  background-color: #1A2532;
+  border-bottom: 1px solid #ADA76C;
+  
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: #ADA76C;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #ADA76C;
+
+  &:hover {
+    background-color: #ADA76C;
+    color: #1A2532;
+  }
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #ADA76C;
+  color: #1A2532;
+}

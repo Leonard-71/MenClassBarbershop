@@ -1,0 +1,28 @@
+.container-titlu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .imagine {
+    width: 65px;
+    margin-bottom: 10px;
+  }
+  
+  .bara-orizontala {
+    width: 40%;
+    border: 1px solid #ADA76C; 
+  }
+  
+  .text {
+    margin-top: 10px;
+    color:#fff;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+
+  }
+  

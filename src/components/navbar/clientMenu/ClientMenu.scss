@@ -1,0 +1,46 @@
+.client-menu {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: #1A2532;
+  border: 2px solid #ADA76C;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1000;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -22px;
+    right: 18px;  
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 22px solid #1A2532;
+    border-bottom-color: inherit;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: #ADA76C;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:hover {
+      background: #ADA76C;
+      color: #1A2532;
+    }
+
+    svg {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+  }
+}

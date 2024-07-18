@@ -1,0 +1,12 @@
+.sectiune-recenzii-pgdespre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  width: 70%; 
+  margin: 0 auto; 
+  background-color: #2E3846;
+  max-height: 600px; 
+  overflow-y: scroll; 
+  margin-bottom: 3%;
+}

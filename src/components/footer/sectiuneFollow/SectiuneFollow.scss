@@ -1,0 +1,50 @@
+.container-follow {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+  
+    h2 {
+      margin-bottom: 30px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+  
+    .content {
+        display: flex;
+        flex-direction: column;
+     
+      .item {
+        display: flex;
+        align-items: center;
+        position: relative; 
+        margin-top:7%;
+
+        img {
+          width: 30px;
+          height: auto;
+          margin-right: 10px;  
+        }
+      
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s ease;
+      
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      
+        span {
+          position: absolute; 
+          top: 40%;  
+          transform: translateY(-50%); 
+        }
+      }
+      
+    }
+  }
+  

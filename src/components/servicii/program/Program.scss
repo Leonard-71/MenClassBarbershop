@@ -1,0 +1,46 @@
+$text-color: #fff;
+$title-color: #ADA76C;
+
+
+.program-section {
+  width: 70%;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  h2 {
+    margin-bottom: 20px;
+    color: $title-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+
+    .program-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      margin-bottom: 2px; 
+
+      .program-day {
+        color: $text-color;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem; 
+        margin-right: 10px; 
+      }
+
+      .program-status {
+        color: $text-color;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;  
+      }
+    }
+  }
+}

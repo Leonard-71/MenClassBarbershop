@@ -1,0 +1,94 @@
+$navbar-background-color: #2e3846;
+$text-color: #fff;
+
+.navbar-menclass {
+  background-color: $navbar-background-color;
+  color: $text-color;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  gap: 2rem;
+  width: 100%; 
+  padding: 0 20px;
+
+  .info-menclass {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: 1rem;
+      font-style: italic; 
+    }
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .nav-links-menclass {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 2rem;
+
+    li {
+      a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .user-profile-menclass {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 30px; 
+
+    .rounded-profile-menclass {
+      width: 45px;
+      height: 45px;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    span {
+      margin-right: 10px;
+      color: $text-color;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 10px; 
+
+    .info-menclass {
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .nav-links-menclass {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .user-profile-menclass {
+      justify-content: center;
+      padding-right: 0; 
+    }
+  }
+}

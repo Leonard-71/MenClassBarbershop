@@ -1,0 +1,171 @@
+
+.container-card-adresa {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ADA76C; 
+  
+    h2 {
+        color:#ADA76C;
+        margin-left: -9.0%;
+        font-size: 22px;
+    }
+  
+    .contact-adresa {
+      margin-bottom: 3%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;  
+      flex-wrap: wrap;  
+  
+      .item-adresa {
+        display: flex;
+        align-items: center;
+        margin: 10px; 
+        flex: 1 1 200px;  
+  
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #ADA76C;  
+        }
+  
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+  
+        span {
+          font-size: 19px;
+          color: #ADA76C;
+        }
+      }
+    }
+  
+    .container-harta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 550px;
+      width: 100%;
+      color: #ADA76C;
+      border-radius: 5px;
+      background-color: #2E3846;
+      margin-bottom: 5%;
+  
+      .item-adresa {
+        align-self: center;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+  
+        span {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+  
+        img {
+          width: 30px;
+          height: auto;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container-card-adresa {
+      width: 100%;
+      padding: 10px;
+  
+      h2 {
+        font-size: 20px;
+      }
+  
+      .contact-adresa {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+  
+        .item-adresa {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 10px;
+  
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+  
+          img {
+            margin-bottom: 10px;
+          }
+  
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+  
+      .container-harta {
+        height: 400px;
+        width: 100%;
+        padding: 10px;
+  
+        .item-adresa {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+  
+          span {
+            font-size: 18px;
+            margin-left: 0;
+          }
+  
+          img {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container-card-adresa {
+      h2 {
+        font-size: 18px;
+      }
+  
+      .contact-adresa {
+        .item-adresa {
+          min-width: 200px;
+  
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+  
+      .container-harta {
+        height: 300px;
+  
+        .item-adresa {
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+
+
